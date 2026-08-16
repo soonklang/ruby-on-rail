@@ -8,7 +8,7 @@ services:
     healthCheckPath: /up
     disk:
       name: rails-storage
-      mountPath: /opt/render/project/storage
+      mountPath: /opt/render/project/src/storage
       sizeGB: 1
     envVars:
       - key: RAILS_MASTER_KEY
