@@ -1,0 +1,6 @@
+<%= turbo_stream.append "cart_items" do %>
+  <%= render @item %>
+<% end %>
+
+<%= turbo_stream.update "cart_count",
+      Cart.count %>
